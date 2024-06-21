@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#Session1",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -149,6 +149,11 @@
   },
   "active": "a410b1ba9d7116b4",
   "lastOpenFiles": [
+    "images/Anatomy_of_linux_kernal.png",
+    "session_notes/sessions notes.md",
+    "images/Linux_Architecture_simple_view.png",
+    "images",
+    "links/DiplomaLinks.md",
     "use_cases/Use case 2.md",
     "Untitled.canvas",
     "use_cases/screenshots/s1.png",
@@ -156,7 +161,6 @@
     "use_cases/screenshots",
     "use_cases/terminal_output",
     "Untitled",
-    "session_notes/sessions notes.md",
     "2024-05-11.md",
     "setup_environment_and_tools/Environment and tools.md",
     "use_cases/pdfs/Syscall Usecase.pdf",
@@ -165,10 +169,8 @@
     "Islam",
     "~/github/Religion",
     "~/github",
-    "~",
     "2024-05-05.md",
     "commands/Linux commands.md",
-    "links/DiplomaLinks.md",
     "create a link.md",
     "Welcome.md"
   ]

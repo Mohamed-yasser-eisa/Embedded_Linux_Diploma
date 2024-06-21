@@ -1,2 +1,5 @@
 1- [Diploma records](https://bullet-s-school.teachable.com/courses/)
 2- [Obsidian tutorial](https://www.youtube.com/watch?v=QgbLb6QCK88&list=PL3NaIVgSlAVLHty1-NuvPa9V0b0UwbzBd)
+3- [LLinux 101](https://linuxjourney.com/)
+4- [Linux profisional institute](https://www.lpi.org/)
+5- [Best linux certificant](https://www.linuxfoundation.org/)
