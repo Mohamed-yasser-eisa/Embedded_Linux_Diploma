@@ -3,3 +3,4 @@
 3- [LLinux 101](https://linuxjourney.com/)
 4- [Linux profisional institute](https://www.lpi.org/)
 5- [Best linux certificant](https://www.linuxfoundation.org/)
+6- [GitHub study materials](https://github.com/OmarElmelegy/EmbeddedLinux-Hazem/tree/main)
