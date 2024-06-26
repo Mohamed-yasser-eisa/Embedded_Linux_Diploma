@@ -63,7 +63,7 @@ process in Linux means ---> running a cpp application
 
 * tltr tool is used to tell you available options for any Linux command: (https://tldr.inbrowser.app/pages/linux/strace) (sudo apt install tldr)
 
-# #Session4 or 5
+# #Session5
 * **Linux terminal:**
   * It is an application in **User space** layer.
   * We can customize terminal, because and application in user space can be customized.
@@ -77,7 +77,7 @@ process in Linux means ---> running a cpp application
   * What happen when you open a terminal instance?
     * A proccess will be created. (takes CUP time/memory in RAM).
     * Terminal will take a command as input from the user like: (cp - ls - grep - mkdir - ....).
-    * Terminal will route to another application that will execute the command, the application is **shell (think of it as programming languages)** then shell will use **bash (think of it as specific type of programming language)** to execute the command.
+    * Terminal will route to another application that will execute the command, the application is **shell (think of it as scripting languages)** then shell will use **bash (think of it as specific type of scripting language)** to execute the command.
     * Types of shell: (zsh - bash)
     * Example on terminal usage:
       * 1- open new **terminal** [parent process]
@@ -120,6 +120,39 @@ process in Linux means ---> running a cpp application
         fi
 	  ```
 	* apply the changes: `~/.bashrc` or `restart terminal`.
+# #Session6
+* **Bash script 1:**
+  * if command is in root-filesystem ----> will execute in new proccess.
+  * if command is in bash -----> will execute in the same proccess.
+  * example to know the proccess running:
+    * create file: `vi ~/test.sh`
+    * write:
+      ```
+      #! /usr/bin/bash
+      sleep 100
+      ```
+    * change mode: `chmod +x ~/test.sh`
+    * run file: `~/test.sh`
+    * open new treminal: `pstree`
+  * Why we are using `shell:bash` not `python`?
+    * because `shell:bash` is the default built in scripting in linux kernal, very light weight, some commands need bash to be executed. Meanwhile python need to be installed.
+  * command substitution: `<command substitution>` or: $(<command substitution>), it is used to execute a function and get `result` NOT `return` from command and assign it in variable.
+  * function in bash return:
+    * status: `return number`
+    * result: number or string. 
+  * `echo $?` return result of last executed command.
+# #Session7
+* **Bash script 2:**
+  * You can check if a variable already defined before or not.
+  * If function is defined twice, the latest one is the one who will be used.
+  * **TASK (A)**
+    * IPC (inter process communication): Example ($ ls | grep "expression")
+    * RPC (remote process communication): Example (network operations, ssh, flashing code)
+    * Each verb in requiremtns should be a function.
+
+
+
+
 
 
 
