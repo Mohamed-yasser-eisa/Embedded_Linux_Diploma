@@ -4,3 +4,5 @@
 4- [Linux profisional institute](https://www.lpi.org/)
 5- [Best linux certificant](https://www.linuxfoundation.org/)
 6- [GitHub study materials](https://github.com/OmarElmelegy/EmbeddedLinux-Hazem/tree/main)
+7- [A primer on how embedded Linux systems are developed, plus an exploration of the hardware and software ecosystems of ten different commonly-available CPUs](https://jaycarlson.net/embedded-linux/)
+8- [Library Genesis](https://libgen.is/)

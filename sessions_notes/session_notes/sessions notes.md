@@ -149,8 +149,45 @@ process in Linux means ---> running a cpp application
     * IPC (inter process communication): Example ($ ls | grep "expression")
     * RPC (remote process communication): Example (network operations, ssh, flashing code)
     * Each verb in requiremtns should be a function.
-
-
+# #Session8 Network 1
+* Goal from any network is to share data between nodes, or between node and server.
+* If the machines or nodes are connected over the same network, then it is local area network.
+* If the machines or nodes are connected over different network, then it is external area network.
+* * Example on external network:
+    * ![External proccess communication](../images/External_network_acces.png)
+  * Network architecure:
+    * ![Implementation of network](../images/Network_architecure.png)
+  * Network architecture in details:
+    * ![Network architecture in details](../images/Network_layer_in_details.png)
+  * Ethernet frame:
+    * ![Ethernet frame](../images/Ethernet_(DIX)_frame.png)
+  * Preparing the frame to be sent:
+    * ![Formating ethernet message](../images/udp_ip_ethernet_frame.png)
+* Communication types used in automotive:
+  * ` unicast ` : (source -----> one destination).
+  * ` Broadcast ` : (source -----> all destinations).
+  * ` Multicast ` : (source -----> two or more destinations).
+* We can identify any machine with:
+  * MAC address, it is a hardcoded code for the NIC (Network interface card) the pythical HW module (wired ethernet card || wireless card). MAC address is 6-bytes leanth.
+  * IP address.
+* How data is transfered from server (transmitter) to target (receiver)?
+  * 1- The server send an ethernet frame with the following information: [Destination MAC address - Source MAC address - Data - CRC ].
+  * 2- The target will receive the ethernet fram through its pythical layer [ethernet card], and will verify the destination MAC address, if it is its MAC address then the frame will be cut off from the MAC address (source and destination), and only ` Data and CRC ` will be set to upper layer in the network stack for this targer (network IP layer).
+  * 3- The IP layer will check the IP address in the data, if it is matching the machine IP address, then the data will be sent to upper layer "TCP layer".
+  * 4- The TCP layer will verify the ` port number => socet number `, and if it is true, data will be sent to ` socket (think of it as an array or data buffer) ` application layer.
+  * 5- In application layer, the application that will use the received data will use the a protocol to extract the information. Application protocol like: [http - ssh - SOMEIP (automotive)].
+* ` Commands that can be run for network stack `
+  * 1- ` NIC (network interface card) ` : we use tool ` ifconfig/ip ` to get information about the NIC "physical layer".
+    * - run command ` tldr ifconfig ` to get info about the use of this command.
+    * - run command ` ifconfig -a ` to list all NICs.
+    * - you can get information like:
+      * - Machine MAC addrss
+      * - NICs cards
+      * - Machine IP
+      * - NIC status (UP/Down)
+      * - mtu (maximum transmition unit) "in bytes" [maximum size for network frame].
+    * - You can (enable/disable) any NIC, using this command: ` sudo ipconfig <NIC_name> UP `
+  * 2- 
 
 
 
